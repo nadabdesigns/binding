@@ -1,0 +1,41 @@
+/* DECLARING GLOBAL VARIBLES */
+:root {
+	--primary-color: #000000
+	
+	}
+
+/* large displayes up to the~2560px–3440px*/
+@media (min-width: 2560px) and (max-width: 3440px) {
+	p {
+		color: red;
+
+	}
+}
+
+/* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
+
+/* laptop displays 1440px–1680px */
+@media (min-width: 1440px) and (max-width: 1680px) {
+	p {
+		color: green;
+
+	}
+}
+
+/* displays 375px–428px */
+@media (min-width: 375px) and (max-width: 428px) {
+	p {
+		color: blue;
+
+	}
+
+
+}
+
+/* displays smaller than 375 */
+@media screen and (max-width: 375px) {
+	.parentBox :nth-child(n) {
+		background-color: white;
+		animation: none;
+	}
+}
