@@ -7,7 +7,7 @@
 /* large displayes up to the~2560px–3440px*/
 @media (min-width: 2560px) and (max-width: 3440px) {
 	p {
-		color: red;
+		/* color: red; */
 
 	}
 }
@@ -17,7 +17,7 @@
 /* laptop displays 1440px–1680px */
 @media (min-width: 1440px) and (max-width: 1680px) {
 	p {
-		color: green;
+		/* color: green; */
 
 	}
 }
@@ -25,7 +25,7 @@
 /* displays 375px–428px */
 @media (min-width: 375px) and (max-width: 428px) {
 	p {
-		color: blue;
+		/* color: blue; */
 
 	}
 
@@ -33,9 +33,10 @@
 }
 
 /* displays smaller than 375 */
-@media screen and (max-width: 375px) {
-	.parentBox :nth-child(n) {
-		background-color: white;
-		animation: none;
+@media (max-width: 375px) {
+	p {
+		color: green;
+
 	}
+	
 }
