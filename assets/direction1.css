@@ -39,9 +39,8 @@ body {
 }
 
 @font-face {
-	font-family: "Bitstream Vera Serif Bold";
-	src: url("https://mdn.github.io/shared-assets/fonts/VeraSeBd.ttf");
-
+	font-family: "OldEnglishFive";
+	src:  url("OldEnglishFive.ttf");
 }
 
 .script {
@@ -84,7 +83,7 @@ body {
 	
 	color: rgb(0, 0, 0);
 	font-size: 3.7rem;
-	lign
+
 
 
 }
