@@ -1,3 +1,8 @@
+.direction2, .direction3{
+
+	display: none;
+}
+
 * {
 
 	margin: 0;
