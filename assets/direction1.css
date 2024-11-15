@@ -32,30 +32,70 @@ body {
 
 .leftSection {
 	flex: 1;
-	background-color: rgb(181, 29, 29);
-	
+	background-color: rgb(255, 219, 219);
+
 
 
 }
-.script{
+
+@font-face {
+	font-family: "Bitstream Vera Serif Bold";
+	src: url("https://mdn.github.io/shared-assets/fonts/VeraSeBd.ttf");
+
+}
+
+.script {
 	transform: rotate(-45deg);
-	font-size: 1rem;
-    line-height: 3;
-	z-index: -1;
+	font-size: 2rem;
+	line-height: 3;
 
+	font-family: "parfumerie-script", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2rem;
+	text-align: center;
+	position: relative;
+	width: 200%;
+	left: -150px;
+
+
+
+
+
+
+}
+
+.foward {
 	
-}
-.foward{
 
-	z-index: 1;
+	position: fixed;
+	
+	background-color: rgb(173, 0, 0);
+	width: 200px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 
 }
-.backward{
+.foward :nth-child(1) {
+	font-family: "OldEnglishFive";
+	
+	color: rgb(0, 0, 0);
+	font-size: 3.7rem;
+	lign
+
+
+}
+
+.backward {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 
 
 
@@ -64,29 +104,31 @@ body {
 .rightSection {
 	flex: 1;
 	display: flex;
-flex-direction: column;
+	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	background-color: rgb(165, 42, 126);
-	
+	background-color: rgb(173, 0, 0);
+
 
 }
-.row{
+
+.row {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 50%;
+	font-family: "OldEnglishFive";
+	font-size: 3.7rem;
 }
 
-.row1 {
-
-	border: 5px solid rgb(111, 255, 0);
-}
+.row1 {}
 
 .row2 {
+	color: rgb(111, 255, 0);
 
-	border: 5px solid rgb(111, 255, 0);
+
+	background-color: rgb(0, 0, 0);
 
 }
 
