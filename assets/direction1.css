@@ -1,11 +1,24 @@
-.direction2, .direction3{
+.direction3{
 
 	display: none;
+}
+.direction2{
+
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 * {
 
 	margin: 0;
+
+}
+.middleSection{
+	height: 60vh;
+	
 
 }
 
@@ -19,9 +32,10 @@ body {
 }
 
 .mainbox {
-	width: 50rem;
-	height: 38rem;
-
+	/* width: 50rem; */
+	
+	display: flex;
+	height: 100vh;
 
 }
 
@@ -72,10 +86,14 @@ body {
 .foward {
 	
 
-	position: fixed;
+	position: relative;
+	nav-right: 45%;
+	transform: translateX(-250%);
+
+
 	
 	background-color: rgb(173, 0, 0);
-	width: 200px;
+	width: auto;
 	height: 250px;
 	display: flex;
 	justify-content: center;
@@ -126,7 +144,7 @@ body {
 	font-size: 3.7rem;
 }
 
-.row1 {}
+
 
 .row2 {
 	color: rgb(111, 255, 0);
