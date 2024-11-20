@@ -21,14 +21,19 @@
 
 /* displays 375px–428px */
 @media (min-width: 375px) and (max-width: 428px) {
-p{
-	
 
+	.mainbox{
+		background-color: aqua;
+
+
+	}
 
 }
 
 
-}
+
+
+
 
 /* displays smaller than 375 */
 @media (max-width: 375px) {

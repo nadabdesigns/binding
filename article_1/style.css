@@ -1,0 +1,57 @@
+.bigDiv{
+display: flex;
+flex-direction: row;
+background-color: brown;
+padding: 3%;
+
+
+
+}
+body{
+
+	padding: 10%;
+	background-color: black;
+	
+}
+#what{ 
+	font-family: "Inter", sans-serif;
+	font-size: 100px;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	font-weight: 800;
+
+}
+.title1{
+	color: #000;
+	font-family: Inter;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+
+
+}
+.article{
+	color: crimson;
+	writing-mode:horizontal-tb;
+}
+.title2{
+	color: #E52F2F;
+	text-align: center;
+	font-family: Inter;
+	font-size: 50.163px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+
+}
+.paragraph1{
+	color: #E52F2F;
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+
+}
