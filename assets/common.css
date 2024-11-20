@@ -16,18 +16,16 @@
 
 /* laptop displays 1440px–1680px */
 @media (min-width: 1440px) and (max-width: 1680px) {
-	p {
-		/* color: green; */
-
-	}
+	flex-direction: colum;
 }
 
 /* displays 375px–428px */
 @media (min-width: 375px) and (max-width: 428px) {
-	p {
-		/* color: blue; */
+p{
+	
 
-	}
+
+}
 
 
 }

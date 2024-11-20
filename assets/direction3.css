@@ -44,8 +44,6 @@ body {
 .who,.what,.why{
 	display: flex;
 	flex-direction: column;
-	
-
 
 
 }

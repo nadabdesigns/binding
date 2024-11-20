@@ -1,0 +1,122 @@
+body{
+
+	background-color: black;
+	color: white;
+	
+}
+
+ h1 {
+	font-size: 700;
+	font-family: "pf-venue", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+	color: red;
+	
+
+} 
+ .title {
+	font-size: 70px;
+	font-family: "pf-venue", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+	color: red;
+	position: relative;
+}
+
+h1::before {
+	content: 'W';
+	display: inline-block;
+	animation: changeLetter 2s infinite alternate;
+}
+
+@keyframes changeLetter {
+	0% {
+		content: 'W';
+	}
+	100% {
+		content: 'H';
+	}
+}
+
+@keyframes slide-in {
+	from {
+	  transform: translateX(0%);
+	}
+  
+	to {
+	  transform: translateX(100%);
+	}
+  } */
+  h1 {
+	font-size: 700%;
+	font-family: "pf-venue", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+	color: red;
+	position: relative;
+}
+
+h1::before {
+	content: 'W';
+	display: inline-block;
+	animation: changeLetter 3s infinite;
+}
+
+@keyframes changeLetter {
+	0% {
+		content: 'W';
+	}
+	33% {
+		content: 'H';
+	}
+	66% {
+		content: 'O';
+	}
+	100% {
+		content: 'W';
+	}
+}
+.title{
+
+	margin-top: -100%;
+	margin-bottom: 30%;
+	text-align: center;
+	font-family: Parfumerie Script;
+	left: 10hv;
+	color: white;
+	position: relative;
+}
+
+.text {
+	margin: 10%;
+	font-family: "Inter", serif;
+	font-optical-sizing: auto;
+	font-weight: 200;
+	font-style: normal;
+	
+	font-size: 12;
+
+
+
+}
+
+.divRight {
+	margin-left: 30%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	
+
+
+}
+
+.divLeft {
+	margin-right: 30%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+}
+
+media
