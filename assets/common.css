@@ -16,7 +16,7 @@
 
 /* laptop displays 1440px–1680px */
 @media (min-width: 1440px) and (max-width: 1680px) {
-	flex-direction: colum;
+	flex-direction: column;
 }
 
 /* displays 375px–428px */
