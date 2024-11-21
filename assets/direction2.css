@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'OldEnglishFive';
-    src: url('OldEnglishFive.ttf');
+    src: url('OldEnglishFive.ttf') format('truetype');
 }
 .mainbox{
 
