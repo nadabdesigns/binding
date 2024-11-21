@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'OldEnglishFive';
+    src: url('OldEnglishFive.ttf');
+}
 .mainbox{
 
 	display: flex;
