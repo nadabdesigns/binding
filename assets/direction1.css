@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Old English Five';
+    src: url('Binding/OldEnglishFive.ttf');
+}
 .direction3{
 
 	display: none;
