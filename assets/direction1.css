@@ -1,11 +1,10 @@
-@font-face {
-	font-family: 'OldEnglishFive';
-	src: url('OldEnglishFive.woff') format('woff');
-}
-
-.direction3 {
-
-	display: none;
+body {
+	background-color: rgb(0, 0, 0);
+	min-height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10%;
 }
 
 .direction2 {
@@ -15,12 +14,47 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+
 }
 
 * {
 
 	margin: 0;
 
+}
+
+.left,
+.middle,
+.right {
+	/* border: 5px solid; */
+	/* border-color: rgb(55, 181, 59); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.left,
+.right {
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 800;
+
+}
+
+.middle {
+	font-family: "Inter", sans-serif;
+	font-size: 100px;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	font-weight: 800;
 }
 
 .middleSection {
@@ -60,78 +94,60 @@
 	line-height: normal;
 }
 
-body {
-	background-color: rgb(0, 0, 0);
-	min-height: 50vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10%;
-}
-
-.mainbox {
+.section-three-container {
 	/* width: 50rem; */
 
 	display: flex;
-	height: 100vh;
-
-}
-
-.container {
+	align-items: center;
 	background-color: white;
 	width: 100%;
 	height: 100%;
-	padding: 1em;
-	display: flex;
-
+	justify-content: center;
 
 }
 
-.leftSection {
+.section-three-left {
 	flex: 1;
 	background-color: rgb(255, 219, 219);
-
-
-
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
 
 }
-
-
 
 .script {
 	transform: rotate(-45deg);
-	font-size: 2rem;
+	font-size: 5rem;
 	line-height: 3;
 
 	font-family: "parfumerie-script", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 2rem;
-	text-align: center;
+
 	position: absolute;
+
 	width: 300%;
-	left: -150px;
-
-
-
 
 }
+
+
 
 .foward {
 
 
 	position: relative;
-	nav-right: 45%;
+	z-index: 1;
 	justify-content: center;
 	align-items: center;
-	translate: -100%;
+
 
 	background-color: rgb(173, 0, 0);
 	width: auto;
 	padding: 20px;
 	height: 250px;
 	display: flex;
-	
+
 
 }
 
@@ -142,17 +158,14 @@ body {
 	font-size: 9rem;
 
 	color: rgb(0, 0, 0);
-	
 
-
-
-}
-.scriptDiv{
-	width:250px
 
 
 
 }
+
+
+
 
 .backward {
 	display: flex;
@@ -166,6 +179,24 @@ body {
 
 }
 
+.a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	font-family: "gothique-mn", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 9rem;
+	color: black;
+	background-color: blue;
+	z-index: 1;
+
+
+}
+
 .rightSection {
 	flex: 1;
 	display: flex;
@@ -173,6 +204,8 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: rgb(173, 0, 0);
+	z-index: 2;
+	position: relative;
 
 
 }
@@ -182,7 +215,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	font-family: "gothique-mn", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -200,27 +233,22 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	font-family: "gothique-mn", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 9rem;
 
 }
-@font-face {
-    font-family: 'OldEnglishFive';
-    src: url('OldEnglishFive.ttf') format('truetype');
-}
-.mainbox{
 
+.section-three-left {
 	display: flex;
-	height: 100vh;
-	flex-direction: column;
+	width: 50%;
+	height: 100%;
+	background-color: white;
 	justify-content: center;
 	align-items: center;
 }
-	
-
 
 body {
 	background-color: rgb(0, 0, 0);
@@ -229,11 +257,10 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 10%;
-	flex-direction: column
-
-
+	flex-direction: column;
 }
-.direction2{
+
+.direction2 {
 	/* border: 5px solid; */
 	/* border-color: rgb(255, 0, 0); */
 	display: flex;
@@ -241,45 +268,9 @@ body {
 	justify-content: center;
 	height: 100%;
 	background-color: rgb(173, 0, 0);
-	z-index: 1;
-	flex-direction: row
-
-
-}
-.left, .middle, .right{
-	/* border: 5px solid; */
-	/* border-color: rgb(55, 181, 59); */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-
-	
-	
-
-}
-
-.left, .right{
-	writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 20px;
-  font-weight: 800;
-
-}
-.middle{
-	font-family: "Inter", sans-serif;
-	font-size: 100px;
-	writing-mode: vertical-rl;
-	text-orientation: upright;
-	font-weight: 800;
-
-
-
+	z-index: 2;
+	flex-direction: row;
+	position: relative;
 }
 
 /* media Q */
@@ -301,7 +292,7 @@ body {
 @media (min-width: 375px) and (max-width: 428px) {
 
 
-	.mainbox {
+	.section-three-container {
 		/* width: 50rem; */
 
 		display: flex;
@@ -321,10 +312,12 @@ body {
 
 	}
 
-	.leftSection {
+	.section-three-left {
 
 		background-color: rgb(255, 219, 219);
 		height: 10vh;
+		display: flex;
+		flex-direction: row;
 
 
 
@@ -340,10 +333,10 @@ body {
 		font-family: "parfumerie-script", sans-serif;
 		font-weight: 400;
 		font-style: normal;
-		font-size: 2rem;
+
 		text-align: center;
 		position: relative;
-		width: 700%;
+		width: 700px;
 		left: -150px;
 
 

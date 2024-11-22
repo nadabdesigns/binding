@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'OldEnglishFive';
-    src: url('OldEnglishFive.ttf');
-}.mainbox{
+.mainbox{
 	display: none;
 	
 }
@@ -13,11 +10,7 @@ body {
 	justify-content: center;
 	padding: 10%;
 }
-.bigText{
-	
 
-
-}
 .down{
 
 	display: flex;
