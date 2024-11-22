@@ -88,25 +88,20 @@ body {
 	font-weight: 600;
 	writing-mode: horizontal-tb;
 	unicode-bidi: bidi-override;
-	
-
-
 }
 
 .middleSection {
 	height: 60vh;
 	color: aliceblue;
 	text-align: center;
-	padding-top: 40%;
-
-
-
+	
 }
 
 .middleSection h1 {
 	color: #FFF;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -117,10 +112,11 @@ body {
 	font-size: 5rem;
 	line-height: normal;
 	text-transform: capitalize;
-
+	position: relative;
+	z-index: 3;
 }
 
-.middleSection p {
+.important {
 	color: #FFF;
 	text-align: center;
 	font-family: Inter;
@@ -128,6 +124,11 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 3;
 }
 
 .section-three-container {
