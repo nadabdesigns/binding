@@ -327,7 +327,7 @@ body {
 @media (min-width: 375px) and (max-width: 428px) {
 
 	.direction2{
-		height: calc(100vh - 30px);
+		height: calc(100vh - 60px);
 	}
 
 
