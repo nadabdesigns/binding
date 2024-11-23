@@ -1,34 +1,49 @@
-
 /* varbles */
-:root{
+:root {
 	/* size */
 	--size-0: 10px;
-	
-   
-   /* fonts */
-   
-   --red--: rgb(173, 0, 0);
-   --black--: rgb(0, 0, 0);
-   --white--: #FFF;
-   --green--: rgb(111, 255, 0);
-}   
-.bigDiv{
-display: flex;
-flex-direction: row;
-background-color: var(--red--);
-padding: 3%;
-height: calc(80vh - 80px);
 
 
+	/* fonts */
+
+	--red--: rgb(173, 0, 0);
+	--black--: rgb(0, 0, 0);
+	--white--: #FFF;
+	--green--: rgb(111, 255, 0);
+}
+
+.bigDiv {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--red--);
+	padding: 3%;
+	height: calc(50vh - 80px);
+}
+
+.leftDiv p {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
 
 }
-body{
+
+.rightDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+body {
 
 	padding: 10%;
-	background-color: black;
-	
+	background-color: var(--black--);
+
 }
-#what{ 
+
+#what {
 	font-family: "Inter", sans-serif;
 	font-size: 100px;
 	writing-mode: vertical-rl;
@@ -36,7 +51,8 @@ body{
 	font-weight: 800;
 
 }
-.title1{
+
+.title1 {
 	color: #000;
 	font-family: Inter;
 	font-size: 60px;
@@ -46,12 +62,14 @@ body{
 
 
 }
-.article{
-	color: crimson;
-	writing-mode:horizontal-tb;
+
+.article {
+	color: var(--red--);
+	writing-mode: horizontal-tb;
 }
-.title2{
-	color: #E52F2F;
+
+.title2 {
+	color: var(--red--);
 	text-align: center;
 	font-family: Inter;
 	font-size: 50.163px;
@@ -61,8 +79,9 @@ body{
 	text-transform: uppercase;
 
 }
-.paragraph1{
-	color: #E52F2F;
+
+.paragraph1 {
+	color: var(--red--);
 	font-family: Inter;
 	font-size: 20px;
 	font-style: normal;
