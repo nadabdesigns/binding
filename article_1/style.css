@@ -1,7 +1,21 @@
+
+/* varbles */
+:root{
+	/* size */
+	--size-0: 10px;
+	
+   
+   /* fonts */
+   
+   --red--: rgb(173, 0, 0);
+   --black--: rgb(0, 0, 0);
+   --white--: #FFF;
+   --green--: rgb(111, 255, 0);
+}   
 .bigDiv{
 display: flex;
 flex-direction: row;
-background-color: brown;
+background-color: var(--red--);
 padding: 3%;
 height: calc(80vh - 80px);
 
