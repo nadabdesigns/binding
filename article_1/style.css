@@ -17,15 +17,15 @@
 	flex-direction: row;
 	background-color: var(--red--);
 	padding: 3%;
-	height: calc(50vh - 80px);
+	height: calc(50vh);
 }
 
-.leftDiv p {
+.leftDiv p{
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
 	align-content: center;
 	align-items: center;
-	flex-direction: column;
+	
 
 }
 
