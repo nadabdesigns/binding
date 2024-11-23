@@ -3,6 +3,7 @@ display: flex;
 flex-direction: row;
 background-color: brown;
 padding: 3%;
+height: calc(80vh - 80px);
 
 
 
