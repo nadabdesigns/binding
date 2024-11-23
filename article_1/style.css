@@ -17,18 +17,26 @@
 	flex-direction: row;
 	background-color: var(--red--);
 	padding: 3%;
-	height: calc(50vh);
+	height: calc(50vh-30px);
+	
 }
 
-.leftDiv p{
+.leftDiv {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	align-items: center;
+	justify-content: center;
+	/* align-items: center; */
+	
 	
 
 }
+p{
+display: flex;
 
+
+
+}
 .rightDiv {
 	display: flex;
 	justify-content: space-between;
@@ -89,3 +97,61 @@ body {
 	line-height: normal;
 
 }
+/* media Q */
+
+
+
+/* large displayes up to the~2560px–3440px*/
+@media (min-width: 2560px) and (max-width: 3440px) {}
+
+/* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
+
+/* laptop displays 1440px–1680px */
+@media (min-width: 1440px) and (max-width: 1680px) {
+
+
+
+}
+
+/* displays 375px–428px */
+@media (min-width: 375px) and (max-width: 428px) {
+
+	.leftDiv {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+
+	}
+
+
+
+
+
+
+
+
+/* displays smaller than 375 */
+@media (max-width: 375px) {
+	
+
+}
+
+
+/* .frameBox{
+	background-color: black;
+	height: 10vh;
+    position: sticky;
+    top: 0;
+    margin-bottom: 1.5rem;
+    margin-top: 3.5rem;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+} */
