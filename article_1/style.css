@@ -4,12 +4,20 @@
 	--size-0: 10px;
 
 
-	/* fonts */
+
+	/* font colors */
 
 	--red--: rgb(173, 0, 0);
+	--red2--: #E52F2F;
 	--black--: rgb(0, 0, 0);
 	--white--: #FFF;
 	--green--: rgb(111, 255, 0);
+
+		/* font sizes */
+	--fontSize1--: 16px;
+	--fontSize2--: 18px;
+	--fontSize3--: 24px;
+	--fontSize3--: 32px;
 }
 
 .bigDiv {
@@ -17,8 +25,8 @@
 	flex-direction: row;
 	background-color: var(--red--);
 	padding: 3%;
-	height: calc(50vh-30px);
-	
+	height: calc(90vh-30px);
+
 }
 
 .leftDiv {
@@ -27,16 +35,18 @@
 	align-content: center;
 	justify-content: center;
 	/* align-items: center; */
-	
-	
-
-}
-p{
-display: flex;
 
 
 
 }
+
+.flexText {
+	display: flex;
+
+
+
+}
+
 .rightDiv {
 	display: flex;
 	justify-content: space-between;
@@ -46,7 +56,7 @@ display: flex;
 
 body {
 
-	padding: 10%;
+	padding: 5%;
 	background-color: var(--black--);
 
 }
@@ -97,6 +107,60 @@ body {
 	line-height: normal;
 
 }
+
+.poster {
+	background-color: var(--white--);
+	display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.firstText {
+	color: #E52F2F;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+
+
+}
+
+.poster :not(.bigName, .firstText) {
+	/* Apply your desired styles */
+
+	color: var(--red2--);
+	text-align: center;
+	font-family: Inter;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: 300;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.bigName {
+	color: var(--red2--);
+	font-family: Inter;
+	font-size: 32px;
+	font-style: italic;
+	font-weight: 900;
+	line-height: normal;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: auto;
+	text-underline-offset: auto;
+	text-underline-position: from-font;
+	text-transform: uppercase;
+
+
+}
+
 /* media Q */
 
 
@@ -107,26 +171,30 @@ body {
 /* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
 
 /* laptop displays 1440px–1680px */
-@media (min-width: 1440px) and (max-width: 1680px) {
-
-
-
-}
+@media (min-width: 1440px) and (max-width: 1680px) {}
 
 /* displays 375px–428px */
 @media (min-width: 375px) and (max-width: 428px) {
-
-	.leftDiv {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-	
-
-}
+	.bigDiv {
+		display: flex;
+		flex-direction: row;
+		background-color: var(--red--);
+		padding: 3%;
+		height: 60vh;
 
 	}
+
+	.leftDiv {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+
+
+	}
+
+}
 
 
 
@@ -136,10 +204,7 @@ body {
 
 
 /* displays smaller than 375 */
-@media (max-width: 375px) {
-	
-
-}
+@media (max-width: 375px) {}
 
 
 /* .frameBox{
