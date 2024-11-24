@@ -20,6 +20,12 @@
 	--fontSize3--: 32px;
 	/*  font sizes with calc*/
 	--calcH1--: calc(1.5rem + 3vw);
+	--calcH2--: calc(.8rem + 3vw);
+	/* font Size in comparason to other fonts */
+	--p1--: calc(1.5rem + 3vw);
+	--p1_lineHeight--:calc(2.8vw + 3px);
+
+
 }
 
 .bigDiv {
@@ -87,6 +93,33 @@ body {
 	color: var(--red--);
 	writing-mode: horizontal-tb;
 }
+.bodyH1{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	color: bisque;
+
+}
+.leftBox {
+    width: 30px; /* Example width */
+    height: auto; /* Example height */
+    background-color: var(--red--); 
+	margin-right: 20px;
+}
+
+.textBox h1 {
+	color: var(--red--);
+    text-align:left;
+    font-family: Inter;
+    font-size: 50.163px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+	content: ''; /* Gives us an “empty” one to work with. */
+	display: block;
+	/* visibility: hidden; We don’t need to see it or click it. */
+}
 
 .title2 {
 	color: var(--red--);
@@ -126,11 +159,17 @@ body {
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: normal;
-
-
-
+	/* virticle space and text wraps */
+	line-height: var(--p1_lineHeight--);
+	hyphens: manual;
+	word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+.poster p:nth-child(3) {
+    /* Your styles here */
+    text-align: center;
+}
+
 
 .poster :not(.bigName, .firstText) {
 	/* Apply your desired styles */
@@ -138,7 +177,7 @@ body {
 	color: var(--red2--);
 	text-align: center;
 	font-family: Inter;
-	font-size: 24px;
+	font-size: var(--calcH2--);
 	font-style: italic;
 	font-weight: 300;
 	line-height: normal;
@@ -148,7 +187,7 @@ body {
 .bigName {
 	color: var(--red2--);
 	font-family: Inter;
-	font-size: 32px;
+	font-size: var(--calcH1--);
 	font-style: italic;
 	font-weight: 900;
 	line-height: normal;
