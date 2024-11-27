@@ -67,8 +67,29 @@ body {
 
 	padding: 5%;
 	background-color: var(--black--);
+	
+
+
+
 
 }
+.gridDiv{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 10px;
+}
+
+.leftGrid {
+	/* add no styling */
+}
+.rightGrid{
+	background-color: var(--red2--);
+	display: block;
+	overflow-y: auto;
+ 
+
+}
+
 
 #what {
 	font-family: "Inter", sans-serif;
