@@ -24,6 +24,7 @@
 	/* font Size in comparason to other fonts */
 	--p1--: calc(1.5rem + 3vw);
 	--p1_lineHeight--: calc(2.8vw + 5px);
+	--height--: calc(90vh-30px);
 
 
 }
@@ -33,7 +34,7 @@
 	flex-direction: row;
 	background-color: var(--red--);
 	padding: 3%;
-	height: calc(90vh-30px);
+	height: 50vh;
 
 }
 
@@ -76,16 +77,26 @@ body {
 .gridDiv{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	column-gap: 10px;
+	column-gap: 20px;
+	position: relative;
 }
 
-.leftGrid {
+.leftGrid{
 	/* add no styling */
+	
+	
 }
 .rightGrid{
+	height: 50vh;
 	background-color: var(--red2--);
 	display: block;
 	overflow-y: auto;
+	/* position: sticky; */
+	top: 0px;
+	color: var(--black--);
+	padding: 24px;
+	position: sticky;
+
  
 
 }
@@ -354,7 +365,7 @@ h2{
 		display: flex;
 		flex-direction: row;
 		background-color: var(--red--);
-		padding: 3%;
+		padding: 24px;
 		height: 60vh;
 
 	}
