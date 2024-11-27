@@ -23,7 +23,7 @@
 	--calcH2--: calc(.8rem + 3vw);
 	/* font Size in comparason to other fonts */
 	--p1--: calc(1.5rem + 3vw);
-	--p1_lineHeight--:calc(2.8vw + 3px);
+	--p1_lineHeight--: calc(2.8vw + 3px);
 
 
 }
@@ -62,6 +62,7 @@
 
 }
 
+
 body {
 
 	padding: 5%;
@@ -89,37 +90,132 @@ body {
 
 }
 
-.article {
+.sectionBlack {
 	color: var(--red--);
 	writing-mode: horizontal-tb;
 }
-.bodyH1{
+
+/* FOR THE BIG QUOTE CONTAINER */
+.textBox h1 {
+	color: var(--red--);
+	text-align: left;
+	font-family: Inter;
+	font-size: 50.163px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	content: '';
+	/* Gives an “empty” one to work with. */
+	display: block;
+	/* visibility: hidden; We don’t need to see it or click it. */
+}
+
+
+.divH1 {
 	display: flex;
 	flex-direction: row;
 	align-content: center;
 	color: bisque;
+	padding-top: 20;
+	padding-left: 5%;
+}
+/* FOR THE QUOTE CONTAINER WITH TEXT AND DIV */
+.quote{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-left: 5%;
+
 
 }
+
+/* FOR THE SMALL QUOTE CONTAINER */
+.divH2 {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	color: bisque;
+	padding-top: 20;
+	
+}
+
+
+/* 	FOR THE DIV NEXT TO THE SMALL QUOTE INSIDE OF THE CONTAINER */
+.divH2:has(.leftBox) .leftBox {
+	color: var(--red2--);
+	width: 20px;
+	display: flow-root;
+}
+
+/* 	FOR THE SMALL QUOTE INSIDE OF THE CONTAINER */
+.divH2:has(.textBox) .textBox {
+	color: var(--red2--);
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+/* FOR THE QUOTE ITS SELF */
+.quoteBody{
+	display: flex;
+	height: fit-content;
+	flex-direction: column;
+	align-self: stretch;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 200;
+	line-height: normal;
+
+}
+
+/* for quotes */
+/* .quoteH1 {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	color: var(--red2--);
+
+	font-family: Inter;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+
+} */
+/* left box for big div */
 .leftBox {
-    width: 30px; /* Example width */
-    height: auto; /* Example height */
-    background-color: var(--red--); 
+	width: 30px;
+	/* Example width */
+	height: auto;
+	/* Example height */
+	background-color: var(--red--);
 	margin-right: 20px;
 }
 
-.textBox h1 {
-	color: var(--red--);
-    text-align:left;
-    font-family: Inter;
-    font-size: 50.163px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-	content: ''; /* Gives us an “empty” one to work with. */
-	display: block;
-	/* visibility: hidden; We don’t need to see it or click it. */
+/* left box for small div quotes */
+.quoteH1 {
+
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	color: var(--red2--);
+
+	font-family: Inter;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+
+
 }
+
 
 .title2 {
 	color: var(--red--);
@@ -163,11 +259,12 @@ body {
 	line-height: var(--p1_lineHeight--);
 	hyphens: manual;
 	word-wrap: break-word;
-    overflow-wrap: break-word;
+	overflow-wrap: break-word;
 }
+
 .poster p:nth-child(3) {
-    /* Your styles here */
-    text-align: center;
+	/* Your styles here */
+	text-align: center;
 }
 
 
