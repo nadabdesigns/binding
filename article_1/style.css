@@ -23,7 +23,7 @@
 	--calcH2--: calc(.8rem + 3vw);
 	/* font Size in comparason to other fonts */
 	--p1--: calc(1.5rem + 3vw);
-	--p1_lineHeight--: calc(2.8vw + 3px);
+	--p1_lineHeight--: calc(2.8vw + 5px);
 
 
 }
@@ -78,7 +78,10 @@ body {
 	font-weight: 800;
 
 }
+h2{
 
+	margin: 0;
+}
 .title1 {
 	color: #000;
 	font-family: Inter;
@@ -109,6 +112,7 @@ body {
 	/* Gives an “empty” one to work with. */
 	display: block;
 	/* visibility: hidden; We don’t need to see it or click it. */
+	margin: 0;
 }
 
 
@@ -137,6 +141,7 @@ body {
 	align-content: center;
 	color: bisque;
 	padding-top: 20;
+	  
 	
 }
 
@@ -231,11 +236,16 @@ body {
 
 .paragraph1 {
 	color: var(--red--);
-	font-family: Inter;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    hyphens: auto;
+    -webkit-hyphens: auto; /* For Safari */
+    -ms-hyphens: auto;    /* For older versions of IE */
+    word-break: break-word;
+    word-wrap: break-word;
 
 }
 
@@ -295,8 +305,14 @@ body {
 	text-underline-offset: auto;
 	text-underline-position: from-font;
 	text-transform: uppercase;
+	transition: .3s;
 
 
+}
+.bigName:hover {
+	background: var(--red2--);
+	color: var(--white--);
+	
 }
 
 /* media Q */
