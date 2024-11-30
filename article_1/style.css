@@ -1,6 +1,7 @@
 /* scrolling */
 html {
 	scroll-behavior: smooth;
+
 }
 
 /* varbles */
@@ -39,7 +40,7 @@ html {
 	flex-direction: row;
 	background-color: var(--red--);
 	padding: 3%;
-	height: 70vh;
+	height: 50vh;
 
 }
 
@@ -56,6 +57,12 @@ html {
 
 .flexText {
 	display: flex;
+	color: var(--black--);
+	width: 20px;
+	display: flow-root;
+	font-family: inter;
+	height: fit-content;
+	width: fit-content;
 
 
 
@@ -95,19 +102,16 @@ body {
 	display: block;
 	overflow-y: auto;
 	display: grid;
-	grid-template-rows: 1fr 2fr;
+	grid-template-rows: 2fr 1fr 2fr;
 	gap: 20px;
+
 
 	/* position: sticky; */
 	top: 0px;
 	color: var(--red--);
 	/* padding: 24px; */
 	position: sticky;
-	/* stroke-width: 10px; */
-	stroke: var(--red--);
 
-	/* border: 20px solid var(--red--); */
-	/* background-color: aqua; */
 }
 
 
@@ -120,6 +124,25 @@ body {
 	color: antiquewhite;
 	background-color: rgb(255, 0, 247);
 
+}
+
+#a {
+
+	font-family: "gothique-mn", sans-serif;
+	color: #000;
+	font-size: 40px;
+	background-color: var(--red--);
+	align-content: center;
+	justify-content: center;
+
+}
+
+.bentobox1:has(div) div {
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	width: 50%;
+	background-color: #FFF !important;
 }
 
 h2 {
@@ -196,16 +219,19 @@ h2 {
 
 /* 	FOR THE DIV NEXT TO THE SMALL QUOTE INSIDE OF THE CONTAINER */
 .divH2:has(.leftBox) .leftBox {
+	font-family: "Inter", sans-serif;
 	color: var(--red2--);
 	width: 20px;
 	display: flow-root;
 }
+
 /* 	FOR THE DIV NEXT TO THE SMALL QUOTE INSIDE OF THE CONTAINER ON THE RIGHT*/
 .rightNavUP:has(.leftBox) .leftBox {
 	background-color: var(--black--);
 	width: 20px;
 	display: flow-root;
 }
+
 /* 	FOR THE SMALL QUOTE INSIDE OF THE CONTAINER */
 .divH2:has(.textBox) .textBox {
 	color: var(--red2--);
@@ -346,6 +372,7 @@ h2 {
 	text-transform: uppercase;
 }
 
+
 .bigName {
 	color: var(--red2--);
 	font-family: Inter;
@@ -365,19 +392,38 @@ h2 {
 
 }
 
+#research {
+
+	color: var(--red2--);
+	text-align: left;
+	font-family: Inter;
+	font-size: 50.163px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	content: '';
+	display: block;
+	margin: 0;
+}
+
+
 .bigName:hover {
 	background: var(--red2--);
 	color: var(--white--);
 
 }
-.rightNav{
+
+.rightNav {
 
 	background-color: var(--red--);
+	padding-right: 20px;
 }
+
 .rightNavUP {
 
 	display: flex;
-	padding-left: 2%;
+	padding: 5%;
 	align-content: center;
 	padding-bottom: 10px;
 	color: var(--red2--);
@@ -390,7 +436,20 @@ h2 {
 
 }
 
-.bentobox {
+.bentobox1 {
+	background-color: var(--white--);
+	height: 100%;
+	width: 100%;
+	display: flex;
+
+
+	justify-content: center;
+	/* Horizontally align */
+	align-items: center;
+
+}
+
+.bentobox2 {
 	background-color: var(--red--);
 	height: 100%;
 	width: 100%;
@@ -398,7 +457,6 @@ h2 {
 	justify-content: center;
 	/* Horizontally align */
 	align-items: center;
-
 
 }
 
@@ -413,58 +471,70 @@ h2 {
 
 }
 
+h3 {
+
+	font-size: 18px;
+	word-break: break-all;
+
+	font-weight: bold;
+	unicode-bidi: isolate;
+
+
+}
+
 
 /* media Q */
 
 
 
 /* large displayes up to the~2560px–3440px*/
-@media (min-width: 2560px) and (max-width: 3440px) {}
-
-/* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
-
-/* laptop displays 1440px–1680px */
-@media (min-width: 1440px) and (max-width: 1680px) {}
-
-/* displays 375px–428px */
-@media (min-width: 375px) and (max-width: 428px) {
-	.gridDiv {
-		display: none;
-	
-	
-		position: relative;
-	}
+@media (min-width: 2560px) and (max-width: 3440px) {
 
 	.bigDiv {
 		display: flex;
 		flex-direction: row;
 		background-color: var(--red--);
-		padding: 24px;
-		height: 60vh;
+		padding: 3%;
+		height: fit-content;
 
 	}
 
-	.leftDiv {
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		justify-content: center;
-		align-items: center;
 
 
-	}
+}
 
+/* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
+
+/* laptop displays 1440px–1680px */
+@media (min-width: 1440px) and (max-width: 1680px) {
+	
+}
+
+/* displays 375px–428px */
+@media (min-width: 375px) and (max-width: 428px) {
+	.gridDiv {
+		display: none; /* Completely hide the grid */
+	  }
+	
+	  .rightGrid {
+		display: none; /* Completely hide the right grid */
+	  }
 }
 
 
 
 
-
-
-
-
 /* displays smaller than 375 */
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+
+	 .gridDiv {
+    display: none; /* Completely hide the grid */
+  }
+
+  .rightGrid {
+    display: none; /* Completely hide the right grid */
+  }
+}
 
 
 /* .frameBox{
