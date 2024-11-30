@@ -446,7 +446,6 @@ h2 {
 	justify-content: center;
 	/* Horizontally align */
 	align-items: center;
-
 }
 
 .bentobox2 {
@@ -483,7 +482,7 @@ h3 {
 }
 
 
-/* media Q */
+/* MEDIA Q */
 
 
 
@@ -496,57 +495,54 @@ h3 {
 		background-color: var(--red--);
 		padding: 3%;
 		height: fit-content;
-
 	}
-
-
-
 }
 
 /* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
 
 /* laptop displays 1440px–1680px */
-@media (min-width: 1440px) and (max-width: 1680px) {
-	
+@media (min-width: 1440px) and (max-width: 1680px) {}
+
+@media (max-width: 768px) {
+	.gridDiv {
+		display: inline-block;
+		position: relative;
+	}
+
+	.rightGrid {
+		display: none;
+	}
+
+	.rightGrid {
+		display: none;
+	}
 }
 
 /* displays 375px–428px */
 @media (min-width: 375px) and (max-width: 428px) {
 	.gridDiv {
-		display: none; /* Completely hide the grid */
-	  }
-	
-	  .rightGrid {
-		display: none; /* Completely hide the right grid */
-	  }
+		display: inline-block;
+		position: relative;
+	}
+	.rightGrid {
+		display: none;
+	}
+	.rightGrid {
+		display: none;
+	}
 }
-
-
-
 
 /* displays smaller than 375 */
 @media (max-width: 375px) {
+	.gridDiv {
+		display: inline-block;
+		position: relative;
+	}
 
-	 .gridDiv {
-    display: none; /* Completely hide the grid */
-  }
-
-  .rightGrid {
-    display: none; /* Completely hide the right grid */
-  }
+	.rightGrid {
+		display: none;
+	}
+	.rightGrid {
+		display: none;
+	}
 }
-
-
-/* .frameBox{
-	background-color: black;
-	height: 10vh;
-    position: sticky;
-    top: 0;
-    margin-bottom: 1.5rem;
-    margin-top: 3.5rem;
-	display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-
-} */
