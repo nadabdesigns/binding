@@ -1,3 +1,7 @@
+/* scrolling */
+html{
+	scroll-behavior: smooth;
+}
 /* varbles */
 :root {
 	/* size */
@@ -21,11 +25,11 @@
 	/*  font sizes with calc*/
 	--calcH1--: calc(1.5rem + 3vw);
 	--calcH2--: calc(.8rem + 3vw);
+
 	/* font Size in comparason to other fonts */
 	--p1--: calc(1.5rem + 3vw);
 	--p1_lineHeight--: calc(2.8vw + 5px);
 	--height--: calc(90vh-30px);
-
 
 }
 
@@ -60,6 +64,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
 
 }
 
@@ -83,22 +88,21 @@ body {
 
 .leftGrid{
 	/* add no styling */
-	
-	
+
 }
 .rightGrid{
-	height: 50vh;
-	background-color: var(--red2--);
+	height: 100vh;
 	display: block;
 	overflow-y: auto;
 	/* position: sticky; */
 	top: 0px;
-	color: var(--black--);
+	color: var(--red--);
 	padding: 24px;
 	position: sticky;
-
- 
-
+	stroke-width: 10px;
+	stroke: var(--red--);
+	stroke-width: var(var(--red--));
+	border: 20px solid var(--red--);
 }
 
 
@@ -128,6 +132,7 @@ h2{
 .sectionBlack {
 	color: var(--red--);
 	writing-mode: horizontal-tb;
+	padding: 40px;
 }
 
 /* FOR THE BIG QUOTE CONTAINER */
@@ -154,7 +159,7 @@ h2{
 	align-content: center;
 	color: bisque;
 	padding-top: 20;
-	padding-left: 5%;
+	
 }
 /* FOR THE QUOTE CONTAINER WITH TEXT AND DIV */
 .quote{
