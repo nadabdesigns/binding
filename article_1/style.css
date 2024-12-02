@@ -399,6 +399,10 @@ h2 {
 	/* Your styles here */
 	text-align: center;
 }
+.posterText{
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
 
 
 .poster :not(.bigName, .firstText) {
