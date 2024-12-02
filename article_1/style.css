@@ -1,6 +1,7 @@
 /* scrolling */
 html {
 	scroll-behavior: smooth;
+	
 
 }
 
@@ -38,7 +39,7 @@ html {
 
 }
 
-nav {
+.nav {
 	background-color: var(--white--);
 	display: flex;
 	flex-direction: row;
@@ -49,7 +50,7 @@ nav {
 	display: grid;
 	grid-template-columns: 3fr 1fr 1fr 1fr;
 	position: relative;
-	z-index: 1;
+	
 
 
 
@@ -60,8 +61,8 @@ nav {
 	display: flex;
 	flex-direction: row;
 	background-color: var(--red--);
-	padding: 10%;
-	height: 50vh;
+	padding: 3% 0 3% 0;
+	height: 80vh;
 	width: 100%;
 
 
@@ -72,6 +73,8 @@ nav {
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
+	width: 100%;
+	background-color: aqua;
 	/* align-items: center; */
 
 
@@ -81,8 +84,8 @@ nav {
 .flexText {
 	display: flex;
 	color: var(--black--);
-	width: 20px;
-	display: flow-root;
+
+	
 	font-family: inter;
 	height: fit-content;
 	width: fit-content;
@@ -95,14 +98,20 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-direction: row;
 
 }
 
 
 body {
-
+	flex-direction: column;
+display: flex;
 	padding: 1%;
 	background-color: var(--black--);
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	
 
 }
 
@@ -563,11 +572,11 @@ h3 {
 		flex-direction: row;
 		background-color: var(--red--);
 		padding: 3%;
-		height: fit-content;
+		
 
 	}
 
-	nav {
+	.nav {
 		display: none;
 	}
 }
@@ -581,68 +590,76 @@ h3 {
 		display: flex;
 		flex-direction: row;
 		background-color: var(--red--);
-		padding: 3%;
+		
 		height: fit-content;
 	}
 
-	nav {
+	.nav {
 		display: none;
 	}
 }
 
 @media (max-width: 768px) {
 	.gridDiv {
-		display: inline-block;
 		position: relative;
+		display: block;
+		
 	}
 
 	.rightGrid {
 		display: none;
 	}
 
-	.rightGrid {
-		display: none;
-	}
+	
 }
 
 /* displays 375px–428px */
 @media (min-width: 375px) and (max-width: 428px) {
 	.gridDiv {
-		display: inline-block;
+		
 		position: relative;
+		display: block;
+		
 	}
 
 	.rightGrid {
 		display: none;
 	}
 
-	.rightGrid {
-		display: none;
-	}
+	
 	.title1{
-		font-size: 3.5rem;
+		font-size: 1rem;
 	}
 
 }
 
 /* displays smaller than 375 */
 @media (max-width: 375px) {
+	body{
+		display: flex;
+		width: 100%
+	}
 	.gridDiv {
-		display: inline-block;
+		
 		position: relative;
+		display: flex;
+		grid-template-columns: none;
 	}
 
 	.rightGrid {
 		display: none;
+		width: 0;
 	}
 
-	.rightGrid {
-		display: none;
-	}
 
 	.bigDiv {
 
-		height: 100vh;
+		height: 80vh; 
 	}
+	.leftGrid{
+
+		width: 100%;
+	}
+	
 
 }
