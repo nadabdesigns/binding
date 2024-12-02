@@ -14,8 +14,8 @@ html {
 
 	/* font colors */
 
-	--red--: rgb(173, 0, 0);
-	--red2--: #E52F2F;
+	--red--: rgb(255, 0, 0);
+	--red2--: #ff0000;
 	--black--: rgb(0, 0, 0);
 	--white--: #FFF;
 	--green--: rgb(111, 255, 0);
@@ -42,12 +42,12 @@ nav {
 	background-color: var(--white--);
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	width: 100vw;
 	height: 60px;
 	margin-bottom: 10px;
 	border: 4px solid var(--red2--);
 	display: grid;
-	grid-template-columns: 3fr 1fr 1fr;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
 	position: relative;
 	z-index: 1;
 
@@ -62,6 +62,8 @@ nav {
 	background-color: var(--red--);
 	padding: 10%;
 	height: 50vh;
+	width: 100%;
+
 
 }
 
@@ -188,11 +190,12 @@ h2 {
 .title1 {
 	color: #000;
 	font-family: Inter;
-	font-size: 60px;
+	font-size: 4rem;
 	font-style: normal;
 	font-weight: 800;
 	line-height: normal;
 	text-transform: uppercase;
+	/* box-sizing: content-box */
 
 
 }
@@ -399,7 +402,8 @@ h2 {
 	/* Your styles here */
 	text-align: center;
 }
-.posterText{
+
+.posterText {
 	padding-top: 3vh;
 	padding-bottom: 3vh;
 }
@@ -466,9 +470,15 @@ h2 {
 	padding-right: 20px;
 	padding: 30px;
 }
-.arrow{
- font-size: 15px;
 
+.arrow {
+	font-size: 15px;
+	transition: transform 0.3s ;
+
+}
+
+.arrow:hover {
+	transform: rotate(90deg);
 }
 
 .rightNavUP {
@@ -554,7 +564,9 @@ h3 {
 		background-color: var(--red--);
 		padding: 3%;
 		height: fit-content;
+
 	}
+
 	nav {
 		display: none;
 	}
@@ -572,6 +584,7 @@ h3 {
 		padding: 3%;
 		height: fit-content;
 	}
+
 	nav {
 		display: none;
 	}
@@ -605,6 +618,9 @@ h3 {
 
 	.rightGrid {
 		display: none;
+	}
+	.title1{
+		font-size: 3.5rem;
 	}
 
 }
