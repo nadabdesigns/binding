@@ -220,7 +220,7 @@ h2 {
 	color: var(--red2--);
 	text-align: left;
 	font-family: Inter;
-	font-size: 50.163px;
+	font-size: 20.163px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -623,7 +623,7 @@ h3 {
 	}
 
 	.rightGrid {
-		display: none;
+		display: none !important;
 	}
 
 	
@@ -635,6 +635,24 @@ h3 {
 
 /* displays smaller than 375 */
 @media (max-width: 375px) {
+	.bigName {
+		color: var(--red2--);
+		font-family: Inter;
+		font-size: 15px;
+		font-style: italic;
+		font-weight: 900;
+		line-height: normal;
+		text-decoration-line: underline;
+		text-decoration-style: solid;
+		text-decoration-skip-ink: auto;
+		text-decoration-thickness: auto;
+		text-underline-offset: auto;
+		text-underline-position: from-font;
+		text-transform: uppercase;
+		transition: .3s;
+	
+	
+	}
 	body{
 		display: flex;
 		width: 100%
@@ -649,6 +667,10 @@ h3 {
 	.rightGrid {
 		display: none;
 		width: 0;
+	}
+	.title1 {
+		font-size: 30px;
+
 	}
 
 
