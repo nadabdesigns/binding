@@ -30,8 +30,10 @@ html {
 	--calcH2--: calc(.8rem + 3vw);
 
 	/* font Size in comparason to other fonts */
-	--p1--: calc(1.5rem + 3vw);
-	--p1_lineHeight--: calc(2.8vw + 5px);
+	--p1--: calc(1.9rem + 3vw);
+	--p1_lineHeight--: calc(2.8vw/2 + 20px);
+	--p1_lineHeightRed--: calc(3.8vw/3 + 25px);
+	--p1_lineHeightquote--: calc(3.8vw/3 + 20px);
 	--height--: calc(90vh-30px);
 
 }
@@ -289,7 +291,7 @@ h2 {
 	font-size: 18px;
 	font-style: italic;
 	font-weight: 200;
-	line-height: normal;
+	line-height: var(--p1_lineHeightquote--);
 	padding-bottom: 30px;
 	color: var(--red--);
 
@@ -358,7 +360,7 @@ h2 {
 	font-size: 20px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: normal;
+	line-height: var(--p1_lineHeightRed--);
 	hyphens: auto;
 	-webkit-hyphens: auto;
 	/* For Safari */
@@ -545,6 +547,9 @@ h3 {
 		padding: 3%;
 		height: fit-content;
 	}
+	nav {
+		display: none;
+	}
 }
 
 /* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
@@ -552,7 +557,13 @@ h3 {
 /* laptop displays 1440px–1680px */
 @media (min-width: 1440px) and (max-width: 1680px) {
 
-
+	.bigDiv {
+		display: flex;
+		flex-direction: row;
+		background-color: var(--red--);
+		padding: 3%;
+		height: fit-content;
+	}
 	nav {
 		display: none;
 	}
