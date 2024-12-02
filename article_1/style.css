@@ -466,6 +466,10 @@ h2 {
 	padding-right: 20px;
 	padding: 30px;
 }
+.arrow{
+ font-size: 15px;
+
+}
 
 .rightNavUP {
 	display: flex;
