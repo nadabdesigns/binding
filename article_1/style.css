@@ -52,7 +52,7 @@ html {
 	background-color: var(--white--);
 	display: flex;
 	flex-direction: row;
-	width: 70%;
+	width: 100%;
 	height: 60px;
 	/* margin-bottom: 10px; */
 	/* border: 4px solid var(--red2--); */
@@ -60,6 +60,7 @@ html {
 	grid-template-columns: 3fr 1fr 1fr 1fr;
 	position: relative;
 	display: grid;
+	margin-bottom: 10px;
 
 }
 
@@ -70,7 +71,8 @@ p2 {
 	align-items: center;
 	height: 100%;
 	justify-content: center;
-	font-family:"gothique-mn", sans-serif;
+	font-family: "Inter", sans-serif;
+	/* font-family:"gothique-mn", sans-serif; */
 	font-size: 24px;
 	color: var(--red--);
 	
@@ -197,7 +199,7 @@ body {
 
 	font-family: "gothique-mn", sans-serif;
 
-	color: #000;
+	color: var(--black--);
 	font-size: 20rem;
 	background-color: var(--red--);
 	align-content: center;
@@ -206,6 +208,9 @@ body {
 	width: 100%;
 
 }
+
+/* Typing effect */
+
 
 .bentobox1:has(div) div {
 	display: flex;
@@ -517,11 +522,12 @@ h2 {
 .arrow {
 	font-size: 15px;
 	transition: transform 0.3s;
+	transform: skewX(18deg);
 
 }
 
 .arrow:hover {
-	transform: rotate(90deg);
+	transform: ;
 }
 
 .rightNavUP {
@@ -537,6 +543,10 @@ h2 {
 	font-weight: 700;
 	line-height: normal;
 	text-transform: uppercase;
+
+}
+.rightNavUP:hover {
+	
 
 }
 
@@ -590,6 +600,7 @@ h3 {
 
 .h3:hover {
 	color: var(--white--);
+
 }
 
 
