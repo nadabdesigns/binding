@@ -1,7 +1,7 @@
 /* scrolling */
 html {
 	scroll-behavior: smooth;
-	
+
 
 }
 
@@ -50,10 +50,16 @@ html {
 	display: grid;
 	grid-template-columns: 3fr 1fr 1fr 1fr;
 	position: relative;
-	
 
+}
 
+.p2 {
+	display: flex;
+	flex-direction: row;
 
+	align-items: center;
+	height: 100%;
+	justify-content: center;
 }
 
 
@@ -87,7 +93,7 @@ html {
 	display: flex;
 	color: var(--black--);
 
-	
+
 	font-family: inter;
 	height: fit-content;
 	width: fit-content;
@@ -107,13 +113,13 @@ html {
 
 body {
 	flex-direction: column;
-display: flex;
+	display: flex;
 	/* padding: 1%; */
 	background-color: var(--black--);
 	justify-content: center;
 	align-content: center;
 	width: 100%;
-	
+
 
 }
 
@@ -122,7 +128,7 @@ display: flex;
 	grid-template-columns: 3fr 1fr;
 	column-gap: 10px;
 	position: relative;
-	padding:none;
+	padding: none;
 
 }
 
@@ -208,7 +214,7 @@ h2 {
 	font-weight: 800;
 	line-height: normal;
 	text-transform: uppercase;
-	
+
 	/* box-sizing: content-box */
 
 
@@ -218,6 +224,7 @@ h2 {
 	color: var(--red--);
 	writing-mode: horizontal-tb;
 	padding: 40px;
+	overflow-wrap: break-word;
 }
 
 /* FOR THE BIG QUOTE CONTAINER */
@@ -242,7 +249,7 @@ h2 {
 	display: flex;
 	flex-direction: row;
 	align-content: center;
-	
+
 	padding-top: 20;
 	padding-bottom: 40px;
 
@@ -263,7 +270,7 @@ h2 {
 	display: flex;
 	flex-direction: row;
 	align-content: center;
-	
+
 	padding-top: 20;
 	padding-bottom: 20;
 
@@ -378,14 +385,15 @@ h2 {
 	font-style: normal;
 	font-weight: 400;
 	line-height: var(--p1_lineHeightRed--);
-/* hyphens: manual; */
-hyphens: manual;
+	/* hyphens: manual; */
+	hyphens: manual;
 	-webkit-hyphens: auto;
 	/* For Safari */
 	-ms-hyphens: auto;
 	/* For older versions of IE */
 	word-break: break-word;
 	word-wrap: break-word;
+	overflow-wrap: break-word;
 
 }
 
@@ -414,7 +422,7 @@ hyphens: manual;
 }
 
 .poster p:nth-child(3) {
-	
+
 	text-align: center;
 }
 
@@ -455,10 +463,12 @@ hyphens: manual;
 
 
 }
-.blackExperience{
+
+.blackExperience {
 	font-size: 40px;
-	
+
 }
+
 #research {
 
 	color: var(--red2--);
@@ -490,7 +500,7 @@ hyphens: manual;
 
 .arrow {
 	font-size: 15px;
-	transition: transform 0.3s ;
+	transition: transform 0.3s;
 
 }
 
@@ -574,18 +584,20 @@ h3 {
 
 /* large displayes up to the~2560px–3440px*/
 @media (min-width: 2560px) and (max-width: 3440px) {
-	.title1{
+	.title1 {
 		font-size: 7rem;
 	}
+
 	.bigDiv {
 		display: flex;
 		flex-direction: row;
 		background-color: var(--red--);
 		padding: 3%;
-		
+
 
 	}
-	.flexText{
+
+	.flexText {
 		font-size: 3rem;
 	}
 
@@ -603,7 +615,7 @@ h3 {
 		display: flex;
 		flex-direction: row;
 		background-color: var(--red--);
-		
+
 		height: fit-content;
 	}
 
@@ -616,43 +628,46 @@ h3 {
 	.gridDiv {
 		position: relative;
 		display: block;
-		
+
 	}
 
 	.rightGrid {
 		display: none;
 	}
 
-	
+
 }
 
 /* displays 375px–428px */
 @media (min-width: 375px) and (max-width: 428px) {
-	.paragraph1{
+	.paragraph1 {
 		font-size: 15px;
 		-webkit-hyphens: manual !important;
 		-moz-hyphens: manual !important;
 		-ms-hyphens: manual !important;
 		hyphens: manual !important;
+		overflow-wrap: break-word;
 	}
+
 	.gridDiv {
-		
+
 		position: relative;
 		display: block;
-		
+
 	}
 
 	.rightGrid {
 		display: none !important;
 	}
 
-	
-	.title1{
+
+	.title1 {
 		font-size: 1.5rem;
 	}
+
 	.sectionBlack {
-		
-		
+
+
 		padding: 15px;
 	}
 
@@ -660,16 +675,19 @@ h3 {
 
 /* displays smaller than 375 */
 @media (max-width: 375px) {
-	.paragraph1{
+	.paragraph1 {
+		overflow-wrap: break-word;
 
 		font-size: 15px;
 		/* letter-spacing: -0.01rem; */
 	}
+
 	.sectionBlack {
-		
-		
+
+
 		padding: 15px;
 	}
+
 	.bigName {
 		color: var(--red2--);
 		font-family: Inter;
@@ -686,12 +704,14 @@ h3 {
 		text-transform: uppercase;
 		transition: .3s;
 	}
-	body{
+
+	body {
 		display: flex;
 		width: 100%
 	}
+
 	.gridDiv {
-		
+
 		position: relative;
 		display: flex;
 		grid-template-columns: none;
@@ -702,6 +722,7 @@ h3 {
 		width: 0;
 		grid-template-columns: none;
 	}
+
 	.title1 {
 		font-size: 30px;
 
@@ -709,15 +730,16 @@ h3 {
 
 
 	.bigDiv {
-/* padding-left: 20px; */
-/* padding-right: 20px; */
-		height: 80vh; 
+		/* padding-left: 20px; */
+		/* padding-right: 20px; */
+		height: 80vh;
 	}
-	.leftGrid{
- 
+
+	.leftGrid {
+
 		padding: none;
 		width: 100%;
 	}
-	
+
 
 }
