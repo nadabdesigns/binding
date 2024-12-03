@@ -4,6 +4,20 @@ html {
 
 
 }
+html::after {
+	content: "A";
+	position: fixed;
+	font-size: 60rem;
+	transform: rotate(300deg);
+	right: 70%;
+	bottom: 70%;
+	height: 60%;
+	font-family: "parfumerie-script", sans-serif;
+	opacity: 0.5;
+	color: rgb(64, 10, 10);
+	top: 0;
+	z-index: -1;
+	pointer-events: none;}
 
 
 /* varbles */
@@ -15,7 +29,7 @@ html {
 
 	/* font colors */
 
-	--red--: rgb(255, 0, 0);
+	--red--: rgb(255, 32, 32);
 	--red2--: #ff0000;
 	--black--: rgb(0, 0, 0);
 	--white--: #FFF;
@@ -74,8 +88,13 @@ p2 {
 	font-family: "Inter", sans-serif;
 	/* font-family:"gothique-mn", sans-serif; */
 	font-size: 24px;
-	color: var(--red--);
+	color: var(--black--);
 	
+}
+p2:hover{
+
+	font-family: "gothique-mn", sans-serif;
+	font-size: 35px;
 }
 
 
@@ -295,6 +314,13 @@ h2 {
 	padding-bottom: 20;
 
 
+}
+.rightNavUP{
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+.rightNavUP:hover {
+	background-color: var(--white--); 
+	
 }
 
 
