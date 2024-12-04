@@ -4,6 +4,7 @@ html {
 
 
 }
+
 html::after {
 	content: "A";
 	position: fixed;
@@ -17,7 +18,8 @@ html::after {
 	color: var(--red--);
 	top: 0;
 	z-index: -1;
-	pointer-events: none;}
+	pointer-events: none;
+}
 
 
 /* varbles */
@@ -50,7 +52,7 @@ html::after {
 	 */
 	--n--: 1.3rem;
 
-	--b--: calc(60% var(--n--) ); 
+	--b--: calc(60% var(--n--));
 
 
 	/* font Size in comparason to other fonts */
@@ -76,6 +78,10 @@ html::after {
 	display: grid;
 	margin-bottom: 10px;
 
+
+
+
+
 }
 
 .p2 {
@@ -89,9 +95,10 @@ html::after {
 	/* font-family:"gothique-mn", sans-serif; */
 	font-size: 24px;
 	color: var(--black--);
-	
+
 }
-.p2:hover{
+
+.p2:hover {
 
 	font-family: "gothique-mn", sans-serif;
 	font-size: 35px;
@@ -136,6 +143,7 @@ html::after {
 
 
 }
+
 .firsTextCenter {
 	align-items: center;
 
@@ -315,12 +323,14 @@ h2 {
 
 
 }
-.rightNavUP{
+
+.rightNavUP {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .rightNavUP:hover {
-	background-color: var(--white--); 
-	
+	background-color: var(--white--);
+
 }
 
 
@@ -450,7 +460,7 @@ h2 {
 	padding-right: 30px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	
+
 
 }
 
@@ -571,10 +581,8 @@ h2 {
 	text-transform: uppercase;
 
 }
-.rightNavUP:hover {
-	
 
-}
+.rightNavUP:hover {}
 
 .bentobox1 {
 	background-color: var(--white--);
@@ -654,7 +662,7 @@ h3 {
 		font-size: 3rem;
 	}
 
-	
+
 }
 
 /* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
@@ -668,10 +676,10 @@ h3 {
 		background-color: var(--red--);
 		height: 50vh;
 
-		
+
 	}
 
-	
+
 }
 
 @media (max-width: 768px) {
@@ -686,6 +694,7 @@ h3 {
 	}
 
 
+
 }
 
 /* displays 375px–428px */
@@ -697,7 +706,7 @@ h3 {
 		-ms-hyphens: manual !important;
 		hyphens: manual !important; */
 		overflow-wrap: break-word;
-		
+
 	}
 
 	.gridDiv {
@@ -721,14 +730,17 @@ h3 {
 
 		padding: 15px;
 	}
+
 	.bigDiv {
-	
+
 		height: 80vh;
 	}
+
 	.bigName {
 
 		font-size: calc(var(--calcH2--));
 	}
+
 	.poster :not(.bigName, .firstText) {
 
 		color: var(--red2--);
@@ -739,6 +751,14 @@ h3 {
 		font-weight: 300;
 		line-height: normal;
 		text-transform: uppercase;
+	}
+	.nav {
+
+		position: sticky;
+		z-index: 3;
+		top: 0;
+		overflow: visible;
+		padding-bottom: 10px;
 	}
 
 }
@@ -775,6 +795,7 @@ h3 {
 		text-transform: uppercase;
 		transition: .3s;
 	}
+
 	.poster :not(.bigName, .firstText) {
 
 		color: var(--red2--);
@@ -822,6 +843,16 @@ h3 {
 		padding: none;
 		width: 100%;
 	}
+
+	.nav {
+
+		position: sticky;
+		z-index: 3;
+		top: 0;
+		overflow: visible;
+		padding-bottom: 10px;
+	}
+
 
 
 }
