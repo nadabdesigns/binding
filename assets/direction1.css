@@ -153,24 +153,24 @@ body {
 
 	display: flex;
 	align-items: center;
-	background-color: none;
+	background-color: var(--white--);
 	width: 100%;
 	height: 100%;
 	justify-content: center;
+	position: relative;
 
 }
 
 .section-three-left {
-
 	flex: 1;
-	background-color: none;
+	background-color: var(--white--);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	z-index: 1;
 
 }
-section-three-left:after { 
+/* section-three-left:after { 
          
 	content: "Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark   Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark Watermark "; 
 	position: fixed; 
@@ -179,17 +179,24 @@ section-three-left:after {
 	color: rgb(0, 255, 234); 
 	top:0;                     
 	z-index: -1; 
-} 
+}  */
 
 .script {
+	/* top: 50%;
+	left: 50%; */
 	transform: rotate(-45deg);
-	font-size: 5rem;
-	line-height: 3;
+	font-size: 50rem;
+	line-height: normal;
 	font-family: "parfumerie-script", sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	position: absolute;
-	width: 300%;
+	text-overflow: inherit;
+
+	color: var(--black--);
+	transform: translate(-50% -50%);
+
+
 
 }
 
@@ -398,6 +405,9 @@ body {
 
 /* displays smaller than 375 */
 @media (max-width: 375px) {
+	.script {
+		
+		font-size: 20rem;}
 	
 
 }

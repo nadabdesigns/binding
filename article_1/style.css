@@ -78,7 +78,7 @@ html::after {
 
 }
 
-p2 {
+.p2 {
 	display: flex;
 	flex-direction: row;
 
@@ -91,7 +91,7 @@ p2 {
 	color: var(--black--);
 	
 }
-p2:hover{
+.p2:hover{
 
 	font-family: "gothique-mn", sans-serif;
 	font-size: 35px;
@@ -696,11 +696,12 @@ h3 {
 @media (min-width: 375px) and (max-width: 428px) {
 	.paragraph1 {
 		font-size: 15px;
-		-webkit-hyphens: manual !important;
+		/* -webkit-hyphens: manual !important;
 		-moz-hyphens: manual !important;
 		-ms-hyphens: manual !important;
-		hyphens: manual !important;
+		hyphens: manual !important; */
 		overflow-wrap: break-word;
+		
 	}
 
 	.gridDiv {
@@ -759,6 +760,7 @@ h3 {
 
 
 		padding: 15px;
+		overflow-wrap: break-word;
 	}
 
 	.bigName {
