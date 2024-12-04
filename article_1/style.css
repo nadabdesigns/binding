@@ -13,8 +13,8 @@ html::after {
 	bottom: 70%;
 	height: 60%;
 	font-family: "parfumerie-script", sans-serif;
-	opacity: 0.5;
-	color: rgb(64, 10, 10);
+	opacity: 0.15;
+	color: var(--red--);
 	top: 0;
 	z-index: -1;
 	pointer-events: none;}
@@ -654,9 +654,7 @@ h3 {
 		font-size: 3rem;
 	}
 
-	.nav {
-		display: none;
-	}
+	
 }
 
 /* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
@@ -673,9 +671,7 @@ h3 {
 		
 	}
 
-	.nav {
-		display: none;
-	}
+	
 }
 
 @media (max-width: 768px) {
