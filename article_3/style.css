@@ -1,0 +1,860 @@
+/* scrolling */
+html {
+	scroll-behavior: smooth;
+
+
+}
+
+html::after {
+	content: "C";
+	position: fixed;
+	font-size: 60rem;
+	transform: rotate(300deg);
+	right: 70%;
+	bottom: 70%;
+	height: 60%;
+	font-family: "parfumerie-script", sans-serif;
+	opacity: 0.15;
+	color: var(--red--);
+	top: 0;
+	z-index: -1;
+	pointer-events: none;
+}
+
+
+/* varbles */
+:root {
+	/* size */
+	--size-0: 10px;
+
+
+
+	/* font colors */
+
+
+	--red--: #ffffff;
+	--red2--: #e1e1e1;
+	--black--: rgb(0, 0, 0);
+	--white--: #c50000;
+	--green--: rgb(111, 255, 0);
+
+	/* font sizes */
+	--fontSize1--: 16px;
+	--fontSize2--: 18px;
+	--fontSize3--: 24px;
+	--fontSize3--: 32px;
+	/*  font sizes with calc*/
+	--calcH1--: calc(1.5rem + 3vw);
+	--calcH2--: calc(.8rem + 3vw);
+	/* POSTER  MOBILE*/
+	/* n = the sixe of large text
+	b = size of small text
+	75%n=b so be will always be 75% of n
+	 */
+	--n--: 1.3rem;
+
+	--b--: calc(60% var(--n--));
+
+
+	/* font Size in comparason to other fonts */
+	--p1--: calc(1.9rem + 3vw);
+	--p1_lineHeight--: calc(2.8vw/2 + 20px);
+	--p1_lineHeightRed--: calc(3.8vw/3 + 25px);
+	--p1_lineHeightquote--: calc(3.8vw/3 + 20px);
+	--height--: calc(90vh-30px);
+
+}
+
+.nav {
+	background-color: var(--white--);
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 60px;
+	/* margin-bottom: 10px; */
+	/* border: 4px solid var(--red2--); */
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
+	position: relative;
+	display: grid;
+	margin-bottom: 10px;
+
+
+
+
+
+}
+
+.p2 {
+	display: flex;
+	flex-direction: row;
+
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+	font-family: "Inter", sans-serif;
+	/* font-family:"gothique-mn", sans-serif; */
+	font-size: 24px;
+	color: var(--black--);
+
+}
+
+.p2:hover {
+
+	font-family: "gothique-mn", sans-serif;
+	font-size: 35px;
+}
+
+
+.bigDiv {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--red--);
+	padding: 3% 0 3% 0;
+	height: 80vh;
+	width: 100%;
+
+
+}
+
+.leftDiv {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	background-color: var(--red--);
+	padding-left: 40px;
+	padding-right: 40px;
+	/* align-items: center; */
+
+
+
+}
+
+.flexText {
+	display: flex;
+	color: var(--black--);
+
+
+	font-family: inter;
+	height: fit-content;
+	width: fit-content;
+
+
+
+}
+
+.firsTextCenter {
+	align-items: center;
+
+}
+
+.rightDiv {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+
+}
+
+
+body {
+	flex-direction: column;
+	display: flex;
+	/* padding: 1%; */
+	background-color: var(--black--);
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+
+
+}
+
+.gridDiv {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	column-gap: 10px;
+	position: relative;
+	padding: none;
+
+}
+
+.leftGrid {
+	padding: none;
+
+}
+
+.rightGrid {
+	height: 100vh;
+	display: block;
+	overflow-y: auto;
+	display: grid;
+	grid-template-rows: 2fr 1fr 2fr;
+	gap: 10px;
+
+
+	/* position: sticky; */
+	top: 0px;
+	color: var(--red--);
+	/* padding: 24px; */
+	position: sticky;
+
+}
+
+.index {
+	color: var(--black--);
+	font-family: "Inter", sans-serif;
+	font-size: 40px;
+	text-orientation: upright;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+#what {
+	font-family: "Inter", sans-serif;
+	font-size: 100px;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	font-weight: 800;
+}
+
+#a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "gothique-mn", sans-serif;
+
+	color: var(--black--);
+	font-size: 20rem;
+	background-color: var(--red--);
+	align-content: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+
+}
+
+/* Typing effect */
+
+
+.bentobox1:has(div) div {
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	width: 50%;
+	background-color: #FFF !important;
+	padding: 5%;
+}
+
+h2 {
+
+	margin: 0;
+}
+
+.title1 {
+	color: #000;
+	font-family: Inter;
+	font-size: 4rem;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	text-transform: uppercase;
+
+	/* box-sizing: content-box */
+
+
+}
+
+.sectionBlack {
+	color: var(--red--);
+	writing-mode: horizontal-tb;
+	padding: 40px;
+	overflow-wrap: break-word;
+}
+
+/* FOR THE BIG QUOTE CONTAINER */
+.textBox h1 {
+	color: var(--red2--);
+	text-align: left;
+	font-family: Inter;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	content: '';
+	/* Gives an “empty” one to work with. */
+	display: block;
+	/* visibility: hidden; We don’t need to see it or click it. */
+	margin: 0;
+}
+
+
+.divH1 {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+
+	padding-top: 20;
+	padding-bottom: 40px;
+
+}
+
+/* FOR THE QUOTE CONTAINER WITH TEXT AND DIV */
+.quote {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-left: 5%;
+
+
+}
+
+/* FOR THE SMALL QUOTE CONTAINER */
+.divH2 {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+
+	padding-top: 20;
+	padding-bottom: 20;
+
+
+}
+
+.rightNavUP {
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rightNavUP:hover {
+	background-color: var(--white--);
+
+}
+
+
+/* 	FOR THE DIV NEXT TO THE SMALL QUOTE INSIDE OF THE CONTAINER */
+.divH2:has(.leftBox) .leftBox {
+	font-family: "Inter", sans-serif;
+	color: var(--red2--);
+	width: 20px;
+	display: flow-root;
+}
+
+/* 	FOR THE DIV NEXT TO THE SMALL QUOTE INSIDE OF THE CONTAINER ON THE RIGHT*/
+.rightNavUP:has(.leftBox) .leftBox {
+	background-color: var(--black--);
+	width: 10px;
+	display: flow-root;
+
+}
+
+/* 	FOR THE SMALL QUOTE INSIDE OF THE CONTAINER */
+.divH2:has(.textBox) .textBox {
+	color: var(--red2--);
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+/* FOR THE QUOTE ITS SELF */
+.quoteBody {
+	display: flex;
+	height: fit-content;
+	flex-direction: column;
+	align-self: stretch;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 200;
+	line-height: var(--p1_lineHeightquote--);
+	padding-bottom: 30px;
+	color: var(--red--);
+
+}
+
+/* for quotes */
+/* .quoteH1 {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	color: var(--red2--);
+
+	font-family: Inter;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+
+} */
+/* left box for big div */
+.leftBox {
+	width: 30px;
+	/* Example width */
+	height: auto;
+	/* Example height */
+	background-color: var(--red2--);
+	margin-right: 10px;
+
+}
+
+/* left box for small div quotes */
+.quoteH1 {
+
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	color: var(--red2--);
+
+	font-family: Inter;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+
+
+}
+
+
+.title2 {
+	color: var(--red--);
+	text-align: center;
+	font-family: Inter;
+	font-size: 50.163px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+
+}
+
+.paragraph1 {
+	color: var(--red--);
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: var(--p1_lineHeightRed--);
+	/* hyphens: manual; */
+	hyphens: manual;
+	-webkit-hyphens: auto;
+	/* For Safari */
+	-ms-hyphens: auto;
+	/* For older versions of IE */
+	word-break: break-word;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+
+}
+
+.poster {
+	background-color: var(--white--);
+	display: block;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+
+}
+
+.firstText {
+	color: var(--red2--);
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	/* virticle space and text wraps */
+	line-height: var(--p1_lineHeight--);
+	hyphens: manual;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+
+.poster p:nth-child(3) {
+
+	/* text-align: center; */
+}
+
+.posterText {
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+
+.poster :not(.bigName, .firstText, .firsTextCenter) {
+
+	color: var(--red2--);
+	text-align: center;
+	font-family: Inter;
+	font-size: var(--calcH2--);
+	font-style: italic;
+	font-weight: 300;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+
+.bigName {
+	color: var(--red2--);
+	font-family: Inter;
+	font-size: var(--calcH1--);
+	font-style: italic;
+	font-weight: 900;
+	line-height: normal;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-skip-ink: auto;
+	text-decoration-thickness: auto;
+	text-underline-offset: auto;
+	text-underline-position: from-font;
+	text-transform: uppercase;
+	transition: .3s;
+
+
+}
+
+.blackExperience {
+	font-size: 40px;
+
+}
+
+#research {
+
+	color: var(--red2--);
+	text-align: left;
+	font-family: Inter;
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	content: '';
+	display: block;
+	margin: 0;
+}
+
+
+.bigName:hover {
+	background: var(--red2--);
+	color: var(--white--);
+
+}
+
+.rightNav {
+
+	background-color: var(--red--);
+	padding-right: 20px;
+	padding: 30px;
+}
+
+.arrow {
+	font-size: 15px;
+	transition: transform 0.3s;
+	transform: skewX(18deg);
+
+}
+
+.arrow:hover {
+	transform: ;
+}
+
+.rightNavUP {
+	display: flex;
+	flex-direction: row;
+
+	align-content: center;
+	padding-bottom: 10px;
+	color: var(--red2--);
+	font-family: Inter;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+
+}
+
+.rightNavUP:hover {}
+
+.bentobox1 {
+	background-color: var(--white--);
+	height: 100%;
+	width: 100%;
+	display: flex;
+
+
+	justify-content: center;
+	/* Horizontally align */
+	align-items: center;
+}
+
+.bentobox2 {
+	background-color: var(--red--);
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	/* Horizontally align */
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+
+#what2 {
+	font-family: "Inter", sans-serif;
+	font-size: 100px;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	font-weight: 800;
+	color: var(--black--);
+
+
+}
+
+h3 {
+
+	font-size: 18px;
+	/* word-break: break-all; */
+
+	font-weight: bold;
+	unicode-bidi: isolate;
+	color: var(--black--);
+
+}
+
+
+.h3:hover {
+	color: var(--white--);
+
+}
+
+
+/* MEDIA Q */
+
+
+
+/* large displayes up to the~2560px–3440px*/
+@media (min-width: 2560px) and (max-width: 3440px) {
+	.title1 {
+		font-size: 7rem;
+	}
+
+	.bigDiv {
+		display: flex;
+		flex-direction: row;
+		background-color: var(--red--);
+		padding: 3%;
+		height: 80vh;
+
+
+	}
+
+	.flexText {
+		font-size: 3rem;
+	}
+
+
+}
+
+/* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
+
+/* laptop displays 1440px–1680px */
+@media (min-width: 1440px) and (max-width: 1680px) {
+
+	.bigDiv {
+		display: flex;
+		flex-direction: row;
+		background-color: var(--red--);
+		height: 50vh;
+
+
+	}
+
+
+}
+
+@media (max-width: 768px) {
+	.gridDiv {
+		position: relative;
+		display: block;
+
+	}
+
+	.rightGrid {
+		display: none;
+	}
+
+
+
+}
+
+/* displays 375px–428px */
+@media (min-width: 375px) and (max-width: 428px) {
+	.paragraph1 {
+		font-size: 15px;
+		/* -webkit-hyphens: manual !important;
+		-moz-hyphens: manual !important;
+		-ms-hyphens: manual !important;
+		hyphens: manual !important; */
+		overflow-wrap: break-word;
+
+	}
+
+	.gridDiv {
+
+		position: relative;
+		display: block;
+
+	}
+
+	.rightGrid {
+		display: none !important;
+	}
+
+
+	.title1 {
+		font-size: 1.5rem;
+	}
+
+	.sectionBlack {
+
+
+		padding: 15px;
+	}
+
+	.bigDiv {
+
+		height: 80vh;
+	}
+
+	.bigName {
+
+		font-size: calc(var(--calcH2--));
+	}
+
+	.poster :not(.bigName, .firstText) {
+
+		color: var(--red2--);
+		text-align: center;
+		font-family: Inter;
+		font-size: var(--b--);
+		font-style: italic;
+		font-weight: 300;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+
+	.nav {
+
+		position: sticky;
+		z-index: 3;
+		top: 0;
+		overflow: visible;
+		padding-bottom: 10px;
+	}
+
+}
+
+/* displays smaller than 375 */
+@media (max-width: 375px) {
+	.paragraph1 {
+		overflow-wrap: break-word;
+
+		font-size: 15px;
+		/* letter-spacing: -0.01rem; */
+	}
+
+	.sectionBlack {
+
+
+		padding: 15px;
+		overflow-wrap: break-word;
+	}
+
+	.bigName {
+		color: var(--red2--);
+		font-family: Inter;
+		font-size: var(--n--);
+		font-style: italic;
+		font-weight: 900;
+		line-height: normal;
+		text-decoration-line: underline;
+		text-decoration-style: solid;
+		text-decoration-skip-ink: auto;
+		text-decoration-thickness: auto;
+		text-underline-offset: auto;
+		text-underline-position: from-font;
+		text-transform: uppercase;
+		transition: .3s;
+	}
+
+	.poster :not(.bigName, .firstText) {
+
+		color: var(--red2--);
+		text-align: center;
+		font-family: Inter;
+		font-size: var(--b--);
+		font-style: italic;
+		font-weight: 300;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+
+	body {
+		display: flex;
+		width: 100%
+	}
+
+	.gridDiv {
+
+		position: relative;
+		display: flex;
+		grid-template-columns: none;
+	}
+
+	.rightGrid {
+		display: none;
+		width: 0;
+		grid-template-columns: none;
+	}
+
+	.title1 {
+		font-size: 30px;
+
+	}
+
+
+	.bigDiv {
+		/* padding-left: 20px; */
+		/* padding-right: 20px; */
+		height: 80vh;
+	}
+
+	.leftGrid {
+
+		padding: none;
+		width: 100%;
+	}
+
+	.nav {
+
+		position: sticky;
+		z-index: 3;
+		top: 0;
+		overflow: visible;
+		padding-bottom: 10px;
+	}
+
+
+
+}

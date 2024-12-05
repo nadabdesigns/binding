@@ -31,11 +31,16 @@ html::after {
 
 	/* font colors */
 
-	--red--: rgb(255, 32, 32);
+	--red--: #c50000;
 	--red2--: #ff0000;
 	--black--: rgb(0, 0, 0);
 	--white--: #FFF;
 	--green--: rgb(111, 255, 0);
+	/* --red--: #ffffff;
+	--red2--: #e1e1e1;
+	--black--: rgb(0, 0, 0);
+	--white--: #c50000;
+	--green--: rgb(111, 255, 0); */
 
 	/* font sizes */
 	--fontSize1--: 16px;
@@ -752,6 +757,7 @@ h3 {
 		line-height: normal;
 		text-transform: uppercase;
 	}
+
 	.nav {
 
 		position: sticky;
