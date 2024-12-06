@@ -14,7 +14,7 @@ html::after {
 	bottom: 70%;
 	height: 60%;
 	font-family: "parfumerie-script", sans-serif;
-	opacity: 0.15;
+	opacity: 0.09;
 	color: var(--red--);
 	top: 0;
 	z-index: -1;
@@ -32,8 +32,8 @@ html::after {
 	/* font colors */
 
 
-	--red--: #ffffff;
-	--red2--: #e1e1e1;
+	--red--: #f0f0f0;
+	--red2--: #dadada;
 	--black--: rgb(0, 0, 0);
 	--white--: #c50000;
 	--green--: rgb(111, 255, 0);
