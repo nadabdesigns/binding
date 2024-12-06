@@ -162,19 +162,20 @@ body {
 
 
 .middle:hover {
-    animation: shrinkText 1s forwards; 
+    animation: shrinkText 2s forwards; 
 }
 @keyframes enlargeText {
     0% {
         font-size: 20px;
     }
+	
     100% {
         font-size: 90px; 
 
     }}
 	
 .middle {
-    animation: enlargeText 0.7s forwards; 
+    animation: enlargeText 0.8s forwards; 
 }
 
 
