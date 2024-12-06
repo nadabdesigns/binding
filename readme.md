@@ -1,0 +1,1 @@
+I wanted to create a website based on the thesis: Why You Should Care About Graphic Designers. The articles I selected explore the who, what, and why of this statement.
