@@ -1,16 +1,78 @@
 
 /* varbles */
-:root{
- /* size */
- --size-0: 10px;
- 
+/* scrolling */
+html {
+	scroll-behavior: smooth;
 
-/* fonts */
 
---red--: rgb(173, 0, 0);
---black--: rgb(0, 0, 0);
---white--: #FFF;
---green--: rgb(111, 255, 0);
+}
+
+
+
+/* varbles */
+:root {
+	/* size */
+	--size-0: 10px;
+
+
+
+	/* font colors */
+
+	--red--: #c50000;
+	--red2--: #ff0000;
+	--black--: rgb(0, 0, 0);
+	--white--: #FFF;
+	--green--: rgb(111, 255, 0);
+	/* --red--: #ffffff;
+	--red2--: #e1e1e1;
+	--black--: rgb(0, 0, 0);
+	--white--: #c50000;
+	--green--: rgb(111, 255, 0); */
+
+	/* font sizes */
+	--fontSize1--: 16px;
+	--fontSize2--: 18px;
+	--fontSize3--: 24px;
+	--fontSize3--: 32px;
+	/*  font sizes with calc*/
+	--calcH1--: calc(1.5rem + 3vw);
+	--calcH2--: calc(.8rem + 3vw);
+	/* POSTER  MOBILE*/
+	/* n = the sixe of large text
+	b = size of small text
+	75%n=b so be will always be 75% of n
+	 */
+	--n--: 1.3rem;
+
+	--b--: calc(60% var(--n--));
+
+
+	/* font Size in comparason to other fonts */
+	--p1--: calc(1.9rem + 3vw);
+	--p1_lineHeight--: calc(2.8vw/2 + 20px);
+	--p1_lineHeightRed--: calc(3.8vw/3 + 25px);
+	--p1_lineHeightquote--: calc(3.8vw/3 + 20px);
+	--height--: calc(90vh-30px);
+
+}
+
+.nav {
+	background-color: var(--white--);
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 60px;
+	/* margin-bottom: 10px; */
+	/* border: 4px solid var(--red2--); */
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
+	position: relative;
+	display: grid;
+	margin-bottom: 10px;
+
+
+
+
 
 }
 
@@ -185,7 +247,7 @@ body {
 	/* top: 50%;
 	left: 50%; */
 	transform: rotate(-45deg);
-	font-size: 50rem;
+	font-size: 45rem;
 	line-height: normal;
 	font-family: "parfumerie-script", sans-serif;
 	font-weight: 400;
@@ -339,7 +401,14 @@ body {
 /* ALL RULES APPLY WHEN SCREEN IS SMALLER THAN 1680px */
 
 /* laptop displays 1440px–1680px */
-@media (min-width: 1440px) and (max-width: 1680px) {}
+@media (min-width: 1440px) and (max-width: 1680px) {
+
+
+	.script{
+
+		font-size: 45rem;
+	}
+}
 
 /* displays 375px–428px */
 @media (min-width: 375px) and (max-width: 428px) {
