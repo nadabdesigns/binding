@@ -82,11 +82,6 @@ html::after {
 	position: relative;
 	display: grid;
 	margin-bottom: 10px;
-
-
-
-
-
 }
 
 .p2 {
@@ -566,6 +561,7 @@ h2 {
 	transform: skewX(18deg);
 
 }
+
 
 .arrow:hover {
 	transform: ;

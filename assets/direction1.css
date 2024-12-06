@@ -70,9 +70,29 @@ html {
 	display: grid;
 	margin-bottom: 10px;
 
+}
+.p2 {
+	display: flex;
+	flex-direction: row;
 
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+	font-family: "Inter", sans-serif;
+	/* font-family:"gothique-mn", sans-serif; */
+	font-size: 24px;
+	color: var(--black--);
 
+}
+.p2:hover {
 
+	font-family: "gothique-mn", sans-serif;
+	font-size: 35px;
+}
+.arrow {
+	font-size: 15px;
+	transition: transform 0.3s;
+	transform: skewX(18deg);
 
 }
 
@@ -83,7 +103,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10%;
+	padding: 3%;
 }
 
 .direction2 {
@@ -113,6 +133,7 @@ body {
 	align-items: center;
 	width: 100%;
 	height: 100%;
+
 }
 
 .left,
@@ -123,19 +144,43 @@ body {
 	font-optical-sizing: auto;
 	font-weight: 100;
 	font-style: normal;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 800;
 
 }
 
 .middle {
-	font-family: "Inter", sans-serif;
-	font-size: 100px;
-	writing-mode: vertical-rl;
-	text-orientation: upright;
-	font-weight: 800;
-	display: flex;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: 800;
+    display: flex;
+    transition: all 0.3s ease; 
+	
 }
+
+
+.middle:hover {
+    animation: shrinkText 0.5s forwards; /* Animation runs on hover */
+}
+@keyframes enlargeText {
+    0% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 90px; 
+
+    }}
+	
+.middle {
+    animation: enlargeText 0.3s forwards; 
+}
+
+
+
+
+
 
 .direction2 {
 	/* border: 5px solid; */
@@ -163,12 +208,23 @@ body {
 	height: 10%;
 	font-family: Inter;
 	line-height: 10px;
-	font-size: 10px;
+	font-size: 20px;
 	font-weight: 600;
 	writing-mode: horizontal-tb;
 	unicode-bidi: bidi-override;
+	animation: lineHeightAnimation 3s infinite ease-in-out;
 }
-
+@keyframes lineHeightAnimation {
+	0% {
+	  line-height: 25px; 
+	}
+	50% {
+	  line-height: 40px; 
+	}
+	100% {
+	  line-height: 25px; 
+	}
+  }
 .middleSection {
 	height: 60vh;
 	color: var(--white--);
@@ -247,7 +303,7 @@ body {
 	/* top: 50%;
 	left: 50%; */
 	transform: rotate(-45deg);
-	font-size: 45rem;
+	font-size: 35rem;
 	line-height: normal;
 	font-family: "parfumerie-script", sans-serif;
 	font-weight: 400;
@@ -382,7 +438,7 @@ body {
 	display: block;
 	align-items: center;
 	justify-content: center;
-	padding: 10%;
+	padding: 20px;
 	flex-direction: column;
 }
 
@@ -407,20 +463,80 @@ body {
 	.script{
 
 		font-size: 45rem;
+		
 	}
 }
 /* tablet displays */
 @media  (min-width: 428px) and (max-width: 768px){
-	.script{
+	
+	.direction2{
+		height: calc(100vh - 80px);
+	}
 
-		font-size: 450px;
+
+	.section-three-container {
+		/* width: 50rem; */
+
+		display: flex;
+		flex-direction: column;
+		height: 700px;
+
+	}
+
+	.container {
+		background-color: rgb(53, 199, 197);
+		width: 100%;
+		height: 100vh;
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+
+
+	}
+	.a{
+
+		width: 200px;
+		height: 200px;
+	}
+
+	.section-three-left {
+
+		
+		height: 10vh;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		
+	}
+	.row1 .row2{
+		height:100vh;
+	}
+
+	.script {
+		transform: rotate(-45deg);
+		font-size: 350px;
+		line-height: 1px;
+
+		font-family: "parfumerie-script", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+
+		text-align: center;
+		position: absolute;
+		width: 700px;
+		left: -50px;
+
+
+
+
 	}
 	
 
 }
 
 /* displays 375px–428px */
-@media (min-width: 375px) and (max-width: 428px) {
+@media (max-width: 428px) {
 	
 
 	.direction2{
@@ -447,37 +563,40 @@ body {
 
 
 	}
+	.a{
+
+		width: 200px;
+		height: 200px;
+	}
 
 	.section-three-left {
 
-		background-color: rgb(255, 219, 219);
+		
 		height: 10vh;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		position: relative;
-		overflow-x: hidden;
+		
 	}
 	.row1 .row2{
 		height:100vh;
 	}
 
 	.script {
+
 		transform: rotate(-45deg);
-		font-size: 40px;
-		line-height: 3;
+		font-size: 300px;
+		line-height: 1px;
 
 		font-family: "parfumerie-script", sans-serif;
 		font-weight: 400;
 		font-style: normal;
 
 		text-align: center;
-		position: relative;
-		width: 700px;
-		left: -150px;
-
-
-
+		position: absolute;
+		width: 300px;
+		left: -100px;
 
 	}
 
@@ -485,30 +604,3 @@ body {
 
 
 
-
-
-
-/* displays smaller than 375 */
-@media (max-width: 375px) {
-	.script {
-		
-		font-size: 20rem;}
-	
-
-}
-
-
-
-/* .frameBox{
-	background-color: black;
-	height: 10vh;
-    position: sticky;
-    top: 0;
-    margin-bottom: 1.5rem;
-    margin-top: 3.5rem;
-	display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-
-} */
