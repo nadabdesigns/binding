@@ -156,13 +156,13 @@ body {
     text-orientation: upright;
     font-weight: 800;
     display: flex;
-    transition: all 0.3s ease; 
+    transition: all 0.8s ease-in-out; 
 	
 }
 
 
 .middle:hover {
-    animation: shrinkText 0.5s forwards; /* Animation runs on hover */
+    animation: shrinkText 1s forwards; 
 }
 @keyframes enlargeText {
     0% {
@@ -174,7 +174,7 @@ body {
     }}
 	
 .middle {
-    animation: enlargeText 0.3s forwards; 
+    animation: enlargeText 0.7s forwards; 
 }
 
 
@@ -222,13 +222,15 @@ body {
 	  line-height: 40px; 
 	}
 	100% {
-	  line-height: 2px; 
+	  line-height: 25px; 
 	}
   }
 .middleSection {
 	height: 60vh;
 	color: var(--white--);
 	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
 	
 }
 
@@ -255,11 +257,11 @@ body {
 	color: var(--white--);
 	text-align: center;
 	font-family: Inter;
-	font-size: 20px;
+	font-size: 10px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	height: 20%;
+
 	display: flex;
 	flex-direction: column;
 	position: relative;
